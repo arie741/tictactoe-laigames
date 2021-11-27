@@ -139,7 +139,7 @@ const TicTacComponent: FC<Props> = ({ ai }) => {
   return (
     <>
       <div className="row">
-        <h1>{finish[0] ? parse_winner(finish[1]) + " Won" : ""}</h1>
+        <h1 className="text-center center">{finish[0] ? parse_winner(finish[1]) + " Won!" : ""}</h1>
       </div>
       <div className="row">
         {gridState.map((grid, index) => {
@@ -150,7 +150,7 @@ const TicTacComponent: FC<Props> = ({ ai }) => {
           );
         })}
       </div>
-      <button className="btn btn-primary mx-auto block" onClick={() => resetHandle()}>Reset</button>
+      <button className="btn btn-primary center mt-4" onClick={() => resetHandle()}>Reset</button>
     </>
   );
 };

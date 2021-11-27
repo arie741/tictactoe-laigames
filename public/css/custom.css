@@ -18,6 +18,10 @@
     display:block
 }
 
+.text-center {
+    text-align: center;
+}
+
 .tic-open {
     cursor: pointer;
 }

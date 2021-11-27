@@ -5,7 +5,7 @@ const App: FC = () => {
   return (
     <div className="App">
       <div className="container">
-        <h1>Tic Tac Toe</h1>
+        <h1 className="text-center center">Tic Tac Toe</h1>
         <TicTacComponent ai={true}/>
       </div>
     </div>
